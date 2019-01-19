@@ -1,0 +1,133 @@
+/* pages/car/car.wxss */
+.qdxx{
+  width: 90%;
+  margin:24rpx 5%;
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+.qdtime{
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.qdsj{
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+.usersj{
+  float: left;
+  width: 80%;
+  text-align: right;
+  color: red
+}
+.qdplace{
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.userdd{
+  width: 80%;
+  float: left;
+  font-size: 24rpx;
+  text-align: right;
+}
+.ddxqhead{
+  text-indent: 24rpx;
+  display: block;
+  font-size: 36rpx;
+  line-height: 70rpx;
+  margin: 24rpx 0;
+}
+.goodsinfo{
+  background-color: #fff;
+  border-radius: 8rpx;
+  overflow: hidden;
+  width: 90%;
+  margin:24rpx 5%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.goodsname,.goodsprice{
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+.goodsnum{
+ width: 20%;
+  float: left;
+  text-align: center;
+}
+.tehui{
+  width:6%;
+  height: 40rpx;
+  margin:10rpx 24rpx;
+  text-align: center;
+  font-size:22rpx;
+  line-height: 40rpx;
+  background-color:orange;
+  border-radius: 50%;
+  color: #fff;
+  float:left;
+}
+.tehuiInfo{
+  height: 40rpx;
+  margin:10rpx 24rpx;
+  color: #999;
+  font-size:22rpx;
+  line-height: 40rpx;
+  float: left;
+}
+.tehuiprice{
+   height: 40rpx;
+  margin:10rpx 24rpx;
+  color: orange;
+  font-size:24rpx;
+  line-height: 40rpx;
+  float: right;
+}
+.thimg{
+  overflow: hidden;
+  margin-left: 24rpx;
+  width: 90%;
+  margin:24rpx 5%;
+  height: 70rpx;
+}
+.thimgs{
+  float: left;
+  width: 8%;
+  height: 80%;
+}
+.yhq{
+  width: 50%;
+  height: 100%;
+  float: right;
+  text-align: right;
+  font-size:24rpx;
+  color: red
+}
+.beizhu{
+width: 100%;
+height: 160rpx;
+font-size: 26rpx;
+line-height: 60rpx;
+text-indent: 24rpx;
+
+}
+.totalAll{
+  width: 100%;
+  height: 160rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+.totalimg{
+  width: 120rpx;
+  height: 120rpx
+}

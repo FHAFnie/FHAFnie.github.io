@@ -1,0 +1,36 @@
+<!--pages/car/car.wxml-->
+<view>
+  <view class='qdxx'>
+    <view class='qdtime'>
+     <view class='qdsj'>取单时间:</view>
+     <view class='usersj'>现在下单，稍后即取</view>
+    </view>
+    <view class='qdplace'>
+     <view class='qdsj'>取单地点:</view>
+     <view class='userdd'>湖北省武汉十江夏区光顾金融港B18</view>
+    </view>
+  </view>
+   <text class='ddxqhead'>订单详情</text>
+   <view class='goodsinfo'>
+      <view class='goodsname'>美式咖啡</view>
+      <view class='goodsprice'>￥10.0</view>
+      <view class='goodsnum'>X 1</view>
+   </view>
+    <text class='ddxqhead'>优惠详情</text>
+    <view class='goodsinfo'>
+      <view class='tehui'>特</view>
+      <view class='tehuiInfo'>指定商品限时特价活动</view>
+      <view class='tehuiprice'>-￥8.0</view>
+    </view>
+    <view class='goodsinfo'>
+      <view class='thimg' >
+        <view  class='thimgs'  style="background-image: url('../../imgs/yhq.png');background-size:100% 100%">
+        </view>
+        <view class='yhq'> 没有可用的优惠券 >></view>
+      </view>
+    </view>
+    <text class='ddxqhead'>备注</text>
+    <view class='goodsinfo'>
+    <textarea class='beizhu' cols="3" placeholder ='饮品中规格可参阅订单详情中的显示，若有其他要求，请说明。'></textarea>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/my/my.wxss */
+.qdxx{
+  width: 300rpx;
+}

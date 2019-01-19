@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffc0cb",
+    "navigationBarTitleText": "列 表",
+    "navigationBarTextStyle": "black"
+}
