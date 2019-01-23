@@ -1,0 +1,27 @@
+<!--pages/details/details.wxml-->
+ <view  class='goodsimg'  style="background-image: url('{{result.img}}');background-size:100% 100%">
+</view>
+<text class='goodsprice delText'>￥ {{result.price}}</text>
+<text class='goodsname delText'>{{result.name}}</text>
+<text class='delText info'>快递：免运费</text>
+<text class='delText info'>保证：正品保证·假一赔十</text>
+<text class='delText info'>服务：包邮包税·7甜无理由退换新</text>
+<view wx:for="{{result.imgs}}"  wx:key="{{index}}">
+ <view  class='goodsimg'  style="background-image: url('{{item}}');background-size:100% 100%">
+</view>
+</view>
+
+
+<view class="delFoot">
+  <view class='buyNum'>
+    <button class='sub' type='warn' bindtap="subNun">-</button>
+    <input type='num' value="{{goodsnum}}" class='goodsnum'></input>
+     <button class='add' type='warn' bindtap="addNum">+</button>
+  </view>
+  <view class='addCar'>
+    <text bindtap="addcar">加入购物车</text>
+  </view>
+   <view class='buyNow'>
+    <text bindtap="goCar">立即购买</text>
+  </view>
+</view>

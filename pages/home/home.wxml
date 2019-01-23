@@ -1,2 +1,55 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>
+  <view class='topView'>
+    <icon type='info' size='40rpx'></icon>
+    双十一当天满1888立减888 先到先得
+  </view>
+
+
+
+<!--   
+  <view class='searchView'>
+    <icon type='search' size='40rpx' bindtap='search'></icon>
+    <input placeholder="搜索商品" auto-focus wx:/>
+  </view> -->
+  <view class='swiperView'>
+    <swiper autoplay="true" interval='2000' circular="true">
+      <swiper-item>
+        <image src='https://www.dior.cn/couture/var/dior/storage/images/horizon/woman/make-up/homepage-and-news/studded-cushion/15831939-1-chi-CN/studded-cushion.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='https://www.dior.cn/couture/var/dior/storage/images/horizon/woman/make-up/new-makeup/chinese-new-year/15282354-9-chi-CN/actu-3-cny.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='https://www.dior.cn/file/lvmhminisitehtml/version-1547645432197/rouge_dior/2018/medias/shading/tilt_desktop.jpg'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='imgView'>
+    <image src='https://res.yslbeautycn.com/resources/activityReleased/07ecd57c-c6bd-4517-a657-778281766ac3/images/pc_01.jpg?20190116194157'></image>
+   
+  </view>
+  <view class='typeView'>
+    <view class='topType'>
+      <navigator url='../goods/goods?activeId=0' bindtap='test' data-activeid="{{0}}">
+        <image src='http://120.77.206.87/images/new.png'></image>
+        <text>新品</text>
+      </navigator>
+      <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{1}}">
+        <image src='http://120.77.206.87/images/dior.png'></image>
+        <text>迪奥</text>
+      </navigator>
+      <navigator url='../goods/goods?activeId=2'  bindtap='test' data-activeid="{{2}}">
+        <image src='http://120.77.206.87/images/ysl.png'></image>
+        <text>圣罗兰</text>
+      </navigator>
+    </view>
+    <view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view></view>
+    </view>
+  </view>
+
+</view>

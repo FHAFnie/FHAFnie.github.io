@@ -1,7 +1,4 @@
 {
-  "usingComponents": {},
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffc0cb",
-    "navigationBarTitleText": "主 页",
-    "navigationBarTextStyle": "black"
+  "navigationBarTitleText": "唇诱海淘·海淘",
+  "usingComponents": {}
 }

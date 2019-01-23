@@ -11,11 +11,23 @@
     </view>
   </view>
    <text class='ddxqhead'>订单详情</text>
-   <view class='goodsinfo'>
-      <view class='goodsname'>美式咖啡</view>
-      <view class='goodsprice'>￥10.0</view>
-      <view class='goodsnum'>X 1</view>
-   </view>
+  <view wx:if="{{result.length > 0}}"> 
+    <view wx:for="{{result}}" wx:key="{{index}}">
+      <view class='goodsinfo'>
+          <view class='goodsname'>{{item.name}}</view>
+          <view class='goodsprice'>{{item.price}}</view>
+          <view class='goodsnum'>X {{item.number}}</view>
+          <view class='del'><button type='warn' class='delbtn' bindtap="del" data-goodId="{{item.goodsID}}" >删除</button> </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+  <view class='goodsinfo'>
+    您还没有选择商品，可前往商品页面选购商品！
+  </view>
+  </view>
+
+
     <text class='ddxqhead'>优惠详情</text>
     <view class='goodsinfo'>
       <view class='tehui'>特</view>
@@ -30,7 +42,14 @@
       </view>
     </view>
     <text class='ddxqhead'>备注</text>
-    <view class='goodsinfo'>
+    <view class='goodsinfo' id='beizhuInp'>
     <textarea class='beizhu' cols="3" placeholder ='饮品中规格可参阅订单详情中的显示，若有其他要求，请说明。'></textarea>
+    </view>
+    <view class='tatolAll'>
+      <view class='totalimg' style="background-image: url('http://47.96.178.137/img/zuichun.png');background-size:100% 100%">
+      <text class='numAll'>{{num}}</text>
+      </view>
+      <view class='priceAll'> ￥{{price}}</view>
+      <view class='gopay'> 结算></view>
     </view>
 </view>

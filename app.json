@@ -4,8 +4,10 @@
     "pages/logs/logs",
     "pages/goods/goods",
     "pages/my/my",
+    "pages/newMy/newMy",
     "pages/home/home",
-    "pages/car/car"
+    "pages/car/car",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,7 +40,7 @@
         "selectedIconPath": "imgs/car1.png"
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/newMy/newMy",
         "text": "我的",
         "iconPath": "imgs/mymoney.png",
         "selectedIconPath": "imgs/mymoney1.png"

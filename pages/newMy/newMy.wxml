@@ -1,0 +1,100 @@
+<!--pages/newMy/newMy.wxml-->
+<!-- <text>pages/newMy/newMy.wxml</text> -->
+
+<view>
+  <view class='myHead'>
+    <view class='userInfo' wx:if="{{nickName}}">
+        <image src='{{userPic}}'></image>
+        <view class='userMag'>
+          <view>{{nickName}}<text class='commonPer'>普通会员</text></view>
+          <view class='countMsg'>账号管理</view>
+        </view>
+    </view>
+    <view  class='userInfo wxInfo' wx:if="{{!nickName}}" bindtap='getUserInfo'>
+      <view>点击获取微信账号</view>
+      <!-- <view>
+        <button open-type='getUserInfo'>点击获取微信账号</button>
+      </view> -->
+      <!-- <view>
+        <text></text>
+      </view> -->
+    </view>
+    <view class='otherHead'>
+        <text class='cashP'>打卡领现金</text>
+    </view>
+  </view>
+  <view class='historyBtn'>
+      <view class='head-item'>
+        <image src='../images/redbag.png'></image>
+        <text>礼券/红包</text>
+      </view>
+       <view class='head-item'>
+        <image src='../images/history.png'></image>
+        <text>浏览历史</text>
+      </view>
+       <view class='head-item'>
+        <image src='../images/store.png'></image>
+        <text>收藏商品</text>
+      </view>
+      <view class='head-item'>
+        <image src='../images/order.png'></image>
+        <text>关注店铺</text>
+      </view>
+      <view class='head-item'>
+        <image src='../images/money.png'></image>
+        <text>打卡金</text>
+      </view>
+  </view>
+<view class='orderInfo'>
+      <view class='head-item'>
+        <image src='../images/pay.png'></image>
+        <text>礼券/红包</text>
+      </view>
+       <view class='head-item'>
+        <image src='../images/recieve.png'></image>
+        <text>浏览历史</text>
+      </view>
+       <view class='head-item'>
+        <image src='../images/afterPay.png'></image>
+        <text>退款/售后</text>
+      </view>
+      <view class='head-item'>
+        <image src='../images/orderred.png'></image>
+        <text>全部订单</text>
+      </view>
+  </view>
+  
+</view>
+<view class='cuxiaoPic'>
+  <image src="../images/timg.jpg"></image>
+</view>
+<view class='otherBtn'>
+  <view class='otherItem'>
+    <image src='../images/team.png'></image>
+    <text>我的拼团</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/fee.png'></image>
+    <text>0元申请</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/advice.png'></image>
+    <text>意见反馈</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/book.png'></image>
+    <text>电子书架</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/piao.png'></image>
+    <text>补开发票</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/sale.png'></image>
+    <text>疯狂砍价</text>
+  </view>
+  <view class='otherItem'>
+    <image src='../images/quans.png'></image>
+    <text>领券中心</text>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<!--components/goodslist/goodslist.wxml-->
+<view class="goods-box">
+  <scroll-view class="scroll" scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <view>
+      <view wx:for="{{filtergoods}}" wx:key="index">
+        <view class="goodsone">
+          <view class="img">
+            <navigator url="{{'../details/details?goodsId='+ item.goodsId }}">
+              <image src="{{item.img}}"></image>
+            </navigator>
+          </view>
+          <view class="txt">
+            <navigator url="{{'../details/details?goodsId='+ item.goodsId }}">
+              <p>{{item.name}}</p>
+            </navigator>
+            <p class="adv">
+              火爆促销
+            </p>
+            <p class="price">
+              ￥{{item.price}}
+            </p>
+          </view>
+          <navigator class="det" url="{{'../details/details?goodsId='+ item.goodsId }}">
+          <p>
+           查看详情
+          </p>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

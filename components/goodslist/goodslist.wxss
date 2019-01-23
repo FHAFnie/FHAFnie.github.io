@@ -1,0 +1,56 @@
+/* components/goodslist/goodslist.wxss */
+
+.goodsone {
+  width: 100%;
+  border-radius: 20rpx;
+  margin: 10rpx;
+  background-color: #fff;
+  font-size: 0rpx;
+  overflow: hidden;
+  display: flex;
+  position:relative;
+}
+
+.goodsone image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  display: block;
+  float: left;
+}
+
+.txt{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goodsone p {
+  font-size: 30rpx;
+  margin-left: 24rpx;
+  line-height: 60rpx;
+  color: pink;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.goodsone .adv {
+  color: orange;
+}
+
+.goodsone .price {
+  color:orangered;
+}
+
+.det{
+  position: absolute;
+  right: 50rpx;
+  bottom:10rpx;
+  text-align: center;
+}
+
+.det p{
+  color: red;
+}

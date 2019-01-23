@@ -1,2 +1,16 @@
 <!--pages/goods/goods.wxml-->
-<text>pages/goods/goods.wxml</text>
+
+<view class="goods">
+  <view class="navbar">
+    <nav bindtap="changeActiveId" data-index="{{index}}" class="{{activeId==index?'active':''}}" wx:for="{{goodstype}}" wx:key="index" data-value="{{item.text}}">
+      {{item.value}}
+    </nav>
+  </view>
+  <view class="content" wx:if="{{show}}">
+    <swiper current="{{current}}" bindchange="swiperChange">
+      <swiper-item wx:for="{{goodstype}}" wx:key="{{index}}">
+        <goodslist goodstype="{{item.text}}" allgoods="{{allgoods}}"></goodslist>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
